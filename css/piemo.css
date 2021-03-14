@@ -1,0 +1,47 @@
+.parent{
+	width:100px;
+	margin: 100px auto;
+	position: relative;
+}
+
+.parent p:first-of-type{
+	width:100px;
+	height:100px;
+	border: 1px solid transparent;
+	border-left-color: #f1f1f1;
+	border-right-color: #f1f1f1;
+	border-radius:50%;
+	animation:.7s gira1 infinite;
+}
+
+.parent p:last-of-type{
+	width:70px;
+	height:70px;
+	border: 1px solid transparent;
+	border-top-color: #f1f1f1;
+	border-bottom-color: #f1f1f1;
+	position: absolute;
+	border-radius:50%;
+	top:14px;
+	left:15px;
+	animation:.7s gira2 infinite;
+}
+
+@keyframes gira1{
+	from{
+			transform:rotate(0deg);
+		}
+	to{
+			transform:rotate(360deg);
+		}
+	}
+
+@keyframes gira2{
+	from{
+			transform:rotate(360deg);
+		}
+	to{
+			transform:rotate(0deg);
+		}
+	}
+
